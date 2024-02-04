@@ -1,0 +1,54 @@
+.socialContainer {
+  border-bottom: 2px solid #e6e6e6;
+
+  @media (max-width: 768px) {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  &.dark-theme {
+    border-color: #292929;
+
+    @media (max-width: 768px) {
+      border-color: #333;
+    }
+  }
+}
+
+.iconLink {
+  font-size: 1.8rem;
+
+  &:hover {
+    transition: 0.2s all ease-in-out;
+    color: #000;
+  }
+
+  &.light-theme{
+    color: #4b4b4b;
+
+    &:hover {
+      color: #b4b4b4;
+    }
+  }
+
+  &.dark-theme {
+    color: #fff;
+
+    &:hover {
+      color: #b4b4b4;
+    }
+  }
+}
+
+.header {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+
+  &.light-theme{
+    color: #4b4b4b;
+  }
+
+  &.dark-theme {
+    color: #fff;
+  }
+}

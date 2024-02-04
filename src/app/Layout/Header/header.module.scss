@@ -1,0 +1,68 @@
+@import "../../../assets/scss/styles.scss";
+
+.header{
+    padding: 2rem 10rem;
+    padding-bottom: 1rem;
+
+    &.dark-theme{
+        background-color: #333;
+        color: #fff;
+      }
+    
+      
+      &.light-theme{
+        background-color: #fff;
+        color: #000;
+      }
+
+    &_logo{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &_img{
+
+    }
+
+    &_title{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2.2rem;
+        font-weight: 900;
+        letter-spacing: normal;
+        line-height: normal;
+
+        
+        &.dark-theme{
+            color: white;
+          }
+  
+          
+          &.light-theme{
+            color: $color-text-black;
+          }
+
+    }
+
+    &_buttons{
+        display: flex;
+        gap: 1rem;
+    }
+
+}
+
+
+.search{
+
+    &_icon{
+        
+        &.dark-theme{
+            color: white;
+          }
+  
+          
+          &.light-theme{
+            color: $color-text-black;
+          }
+    }
+}

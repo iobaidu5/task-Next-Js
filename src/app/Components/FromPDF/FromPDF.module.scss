@@ -1,0 +1,33 @@
+.frompdf {
+  padding: 2rem 0;
+
+  &_title {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 2.4rem;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.7;
+  }
+
+  .customArrow {
+    
+  }
+
+  .slide {
+    padding: 0 2rem !important;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem 0; 
+  }
+
+  &.dark-theme {
+
+    color: #ffffff; 
+  }
+
+  &.ligt-theme{
+    color: #121212; 
+  }
+
+}

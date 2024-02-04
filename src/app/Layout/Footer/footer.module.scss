@@ -1,0 +1,153 @@
+.footer {
+  padding: 0 10rem;
+  padding-top: 4rem;
+  background-color: #f1f3f4;
+  color: #000;
+
+  &.dark-theme {
+    background-color: #121212;
+    color: #fff;
+  }
+
+  &_bottom{
+    padding: 4rem 0;
+  }
+
+  .links {
+    padding: 2rem 0;
+    border-bottom: 2px solid #e6e6e6;
+
+    &.dark-theme {
+      border-color: #292929;
+    }
+  }
+
+  .column {
+    width: 100%;
+
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+
+    @media (min-width: 1024px) {
+      width: 20%;
+    }
+    padding-top: 1.2rem;
+  }
+
+  .header {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    &.dark-theme {
+      color: #fff;
+    }
+  }
+
+  .link {
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    font-size: 1.4rem;
+    padding: 0.8rem 0;
+    line-height: 1.5;
+
+    &:hover {
+      color: #000;
+    }
+
+    &.light-theme{
+      color: #4b4b4b;
+    }
+
+    &.dark-theme {
+      color: #fff;
+
+      &:hover {
+        color: #b4b4b4;
+      }
+    }
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logoContent {
+    display: flex;
+    align-items: center;
+  }
+
+  .logoText {
+    font-family: 'Open Sans', sans-serif;
+    padding-right: 0.7rem;
+    font-size: 3rem;
+    font-weight: 700;
+
+    &.light-theme{
+      color: #4b4b4b;
+    }
+
+    &.dark-theme {
+      color: #fff;
+    }
+  }
+
+  .logoIcon {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    border-radius: 0.5rem;
+  }
+
+  .iconText {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.5rem;
+    font-weight: 700;
+    color: #fff;
+
+    &.light-theme{
+      color: #fff;
+    }
+
+    &.dark-theme {
+      color: #fff;
+    }
+  }
+
+  .themeButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.2rem;
+    height: 3.2rem;
+    background-color: #dedede;
+    padding: 2.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+
+    .icon {
+      font-size: 20px;
+      color: #333;
+
+      &.dark-theme {
+        color: #fff;
+      }
+    }
+  }
+
+  .linkList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 8px;
+  }
+}
