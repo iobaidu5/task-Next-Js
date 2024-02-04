@@ -1,13 +1,16 @@
 import { FaYoutube, FaTwitter, FaFacebook } from "react-icons/fa";
 import styles from "./SocialAccounts.module.scss";
-import { useTheme } from '../../Theme/themes';
+import { useTheme } from "../../Theme/themes";
 import Link from "next/link";
 
 const SocialAccounts: React.FC = () => {
   const { theme } = useTheme();
   return (
-
-    <div className={`${styles.socialContainer} ${theme === 'dark' ? styles['dark-theme'] : styles['light-theme']} flex align-center items-center gap-8 py-10`}>
+    <div
+      className={`${styles.socialContainer} ${
+        theme === "dark" ? styles["dark-theme"] : styles["light-theme"]
+      } flex align-center items-center gap-8 py-10`}
+    >
       <span className={styles.header}>Follow us</span>
       <ul className="flex items-center gap-8">
         <li>

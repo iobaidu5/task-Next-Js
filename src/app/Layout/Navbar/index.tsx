@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import styles from "./navbar.module.scss";
 import { MenuItemsUtil, MenuItem } from "../../../utils/menuItems";
-import { useTheme } from "../../Theme/themes"; 
+import { useTheme } from "../../Theme/themes";
 
 const Navbar: React.FC = () => {
   const { theme } = useTheme();
@@ -20,7 +20,11 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className={`${styles.navbar} ${theme === 'dark' ? styles['dark-theme'] : styles['light-theme']}`}>
+    <nav
+      className={`${styles.navbar} ${
+        theme === "dark" ? styles["dark-theme"] : styles["light-theme"]
+      }`}
+    >
       <ul className={styles.menu}>
         {menuItems.map((item) => (
           <li
@@ -32,7 +36,11 @@ const Navbar: React.FC = () => {
             onMouseLeave={handleMouseLeave}
           >
             <Link href={item.link}>
-              <span className={`${styles.link} ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
+              <span
+                className={`${styles.link} ${
+                  theme === "dark" ? "dark-theme" : "light-theme"
+                }`}
+              >
                 {item.text}
               </span>
             </Link>
@@ -44,7 +52,11 @@ const Navbar: React.FC = () => {
                 {item.sub_menu.map((submenuItem, subIndex) => (
                   <li key={subIndex}>
                     <Link href={submenuItem.link}>
-                      <span className={`${styles.link} ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
+                      <span
+                        className={`${styles.link} ${
+                          theme === "dark" ? "dark-theme" : "light-theme"
+                        }`}
+                      >
                         {submenuItem.text}
                       </span>
                     </Link>

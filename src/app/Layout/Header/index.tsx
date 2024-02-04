@@ -4,12 +4,16 @@ import SettingsIcon from "../../../assets/images/settings-icon.png";
 import styles from "./header.module.scss";
 import { FiSearch } from "react-icons/fi";
 import Button from "../../GenericComponents/Button";
-import { useTheme } from "../../Theme/themes"; 
+import { useTheme } from "../../Theme/themes";
 
 const Header = () => {
   const { theme } = useTheme();
   return (
-    <section className={`${styles.header} ${theme === 'dark' ? styles['dark-theme'] : styles['light-theme']}`}>
+    <section
+      className={`${styles.header} ${
+        theme === "dark" ? styles["dark-theme"] : styles["light-theme"]
+      }`}
+    >
       <div className="">
         <div className="flex justify-between w-100">
           <div className={styles.header_logo}>
@@ -24,7 +28,9 @@ const Header = () => {
             <input
               type="text"
               placeholder="Search for Movies, TV Shows, Themes & Cast"
-              className={`${styles.input_field} ${theme === 'dark' ? styles['dark-theme'] : styles['light-theme']}`}
+              className={`${styles.input_field} ${
+                theme === "dark" ? styles["dark-theme"] : styles["light-theme"]
+              }`}
             />
             <FiSearch className={styles.search_icon} />
             <div className={styles["border-left"]}></div>
