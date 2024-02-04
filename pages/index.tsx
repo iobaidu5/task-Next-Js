@@ -19,8 +19,8 @@ export default function Home() {
         <div
           className={
             theme === "dark"
-              ? "dark-theme flex flex-col gap-10"
-              : "light-theme flex flex-col gap-10"
+              ? "dark-theme flex flex-col"
+              : "light-theme flex flex-col"
           }
         >
           <Bookmarks header="Your Bookmarks" data={bookmarksData} />
