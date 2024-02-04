@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
             </Link>
             {item.sub_menu && activeSubmenu === item.id && (
               <ul
-                className={styles.submenuContent}
+                className={`${styles.submenuContent}`}
                 style={{ top: `${submenuTopOffset}rem` }}
               >
                 {item.sub_menu.map((submenuItem, subIndex) => (

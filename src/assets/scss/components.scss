@@ -79,6 +79,7 @@
     border: 1px solid #f2f2f2;
     border-radius: 2.4rem;
     padding: 0 3rem;
+    background-color: #f2f2f2;
 
     &.dark-theme{
       background-color: #333;
@@ -99,9 +100,11 @@
     padding-right: 3rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
+    background-color: #f2f2f2;
 
     &.dark-theme{
-      background-color: #333;
+      background-color: transparent;
+      color: #000;
     }
 
     
@@ -115,6 +118,16 @@
     right: 2rem;
     font-size: 2rem;
     font-weight: 600;
+    color: #000;
+
+    &.dark-theme{
+      color: #000;
+    }
+
+    
+    &.light-theme{
+      color: #000;
+    }
   }
   
   .border-left {

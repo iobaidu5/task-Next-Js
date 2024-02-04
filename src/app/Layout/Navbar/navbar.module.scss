@@ -48,6 +48,19 @@
         
         .submenuContent {
           display: block;
+
+          
+        &.dark-theme{
+          background-color: #333;
+          border: 1px solid #ececee;
+        }
+
+        
+        &.light-theme{
+          background-color: #fff;
+          background: #fff;
+          border: 1px solid #ececee;
+        }
         }
       }
 
@@ -71,7 +84,7 @@
           z-index: 1;
           list-style: none;
           padding: 2rem;
-          background-color: #fff !important;
+          background-color: #333;
           border: 1px solid #ececee;
         }
 
@@ -85,8 +98,8 @@
           z-index: 1;
           list-style: none;
           padding: 2rem;
-          background-color: #fff !important;
-          background: #fff !important;
+          background-color: #fff;
+          background: #fff;
           border: 1px solid #ececee;
         }
         
@@ -109,7 +122,6 @@
             &:hover {
               background-color: #ececee !important;
               border-radius: 1rem;
-
             }
           }
         }
