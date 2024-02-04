@@ -1,5 +1,5 @@
 .frompdf {
-  padding: 2rem 0;
+  padding: 0 10rem;
 
   &_title {
     font-family: 'Open Sans', sans-serif;
@@ -7,6 +7,7 @@
     font-weight: 700;
     font-size: 3rem;
     line-height: 1.7;
+    margin-left: 2rem;
   }
 
   .customArrow {
@@ -14,7 +15,7 @@
   }
 
   .slide {
-    padding: 0 2rem !important;
+    padding: 0 1rem !important;
   }
 
   @media (max-width: 768px) {
